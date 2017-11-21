@@ -1,0 +1,165 @@
+body a:hover {
+    cursor:pointer;
+    color:#006eaa;
+    text-decoration: none;
+}
+.liMapLogo {
+    max-width: 200px;
+}
+.carousel-inner .item img {
+    width: 100%;
+}
+
+/*资讯 业务 活动 Start*/
+.col-md-4 {
+    padding-left:15px;
+    padding-right:15px;
+}
+.block-main {
+    line-height:24px;
+}
+.block-header {
+    height:84px;
+}
+.title-left span {
+    float:left;
+    width:4px;
+    height:22px;
+    background:#006eaa;
+    margin-top:30px;
+}
+.title-left h3 {
+    float:left;
+    font-weight:bold;
+    color:#006eaa;
+    margin-top:26px;
+    margin-left:10px;
+}
+.img-bg {
+    width:75%;
+    margin-top: 34px;
+    float:left;
+    height:15px;
+    background:url(../images/interval.png) no-repeat;
+}
+.title-left {
+    float:left;
+}
+.title-right {
+    width:65%;
+    float:right;
+}
+.title-right a {
+    float:right;
+    display:inline-block;
+    color:#fa8100;
+    margin-top:30px;
+    margin-left:5px;
+}
+.first-news .first-news-left {
+    padding-left:15px;
+    padding-right:0px;
+}
+.first-news .first-news-right {
+    padding-right:15px;
+    padding-left:0px;
+}
+.first-news-right a {
+    color:#006eaa;
+    margin:6px 0 6px 0;
+    float:right;
+    font-size: 16px;
+}
+.first-news-right p {
+    /*margin-left:10px;*/
+    margin-bottom: 0;
+    float:right;
+}
+.dot {
+    margin-top:20px;
+    margin-bottom:0px;
+    border-bottom:1px dotted #ccc;
+}
+.second-news a {
+    font-size:16px;
+    color:#4b4b4b;
+    display:block;
+    height:40px;
+    line-height:50px;
+}
+.second-news p {
+    text-indent: 2em;
+}
+.third-news a {
+    font-size:16px;
+    color:#4b4b4b;
+    display:block;
+    height:40px;
+    line-height:50px;
+}
+.third-news p {
+    text-indent: 2em;
+}
+@media(max-width:768px) {
+    .title-right {
+        width: 60%;
+    }
+    .img-bg {
+        width: 70%;
+    }
+}
+/*资讯 业务 活动 End*/
+
+/*成功案例 Start*/
+.example-top {
+    overflow: hidden;
+    position: relative;
+}
+.example-top img {
+    transition: all ease-in .20s;
+}
+.example-top:hover img{
+    transform:scale(1.1);
+}
+.example-top .mask {
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    opacity:0;
+    filter:alpha(opacity=0);
+    background-color:rgba(0,0,0,0);
+}
+.example-top .mask a {
+    width:84px;
+    height:18px;
+    display:inline-block;
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-top:-9px;
+    margin-left:-42px;
+    color:#fff;
+    font-size: 16px;
+    font-weight: bold;
+}
+.example-top:hover .mask{
+    opacity:1;
+    filter:alpha(opacity=1);
+    background-color:rgba(0,0,0,0.2);
+}
+.example-bottom a {
+    font-size:16px;
+    color:#4b4b4b;
+    display:block;
+    height:40px;
+    line-height:50px;
+}
+.project-main {
+    line-height:24px;
+}
+.project-main {
+    margin-bottom:24px;
+}
+/*成功案例 End*/
