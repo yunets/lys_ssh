@@ -138,9 +138,36 @@ ${basePath}
 		</script>
 
 
+ <div class="form-group col-sm-12">
+		<label for="name">新闻标题：</label>
+		<input type="text" class="form-control" id="name" 
+				   placeholder="新闻标题">
+	</div>
+<button   class="btn btn-default" onclick="save();">提交</button>
+<script type="text/javascript">
+
+function save(){
+
+		$.ajax({
+			url:'${basePath}/user/save',
+			data:{
+				name:$("#name").val()
+	         },
+			dataType:'json',
+			type:'post',
+			success:function(data){				 
+				alert('提交成功');
+				
+	 		},
+	 		error:function(data){
+	 			alert('提交失败');
+			}
+		});
+	
+}
 
 
-
+</script>
 
 
 </body>
