@@ -22,7 +22,7 @@
 </head>
 <body>
 
-
+${basePath}
 <table  class="table table-hover" >
 		   <caption>新闻列表</caption>
 	<thead>
@@ -39,10 +39,10 @@
 		<ul id='bp-element' class="col-xs-12 col-sm-12" ></ul>
 	<script type="text/javascript">
 	$(function(){ 
-		paginationNews();
+		paginations();
 	}); 
 	//获取新闻并分页
-	function paginationNews(){
+	function paginations(){
 		$.ajax({
 			url:'${basePath}/user/findByHql',
 			data:{
