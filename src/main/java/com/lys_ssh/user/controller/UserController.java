@@ -7,6 +7,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import com.lys_ssh.base.BaseController;
 import com.lys_ssh.base.page.Pager;
 import com.lys_ssh.user.entity.UserEntity;
 import com.lys_ssh.user.service.UserService;
@@ -17,7 +18,7 @@ import com.lys_ssh.user.service.UserService;
 
 @Controller
 @RequestMapping("/user")
-public class UserController {
+public class UserController extends BaseController{
 
 	@Autowired
     UserService userService;
@@ -42,6 +43,7 @@ public class UserController {
     	user.setAlterTime(new Date());
     	userService.save(user);
     }
+    
     
 
 }
