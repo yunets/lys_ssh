@@ -1,7 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <% String basePath=request.getContextPath(); 
-   request.setAttribute("basePath", basePath); %>    
+   request.setAttribute("basePath", basePath); %>   
+   <%@ taglib uri="http://lys/tags/security" prefix="security"%> 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -143,6 +144,8 @@ ${basePath}
 		<input type="text" class="form-control" id="name" 
 				   placeholder="新闻标题">
 	</div>
+	<security:ifAny authorization="test_pass1">test_pass1</security:ifAny>
+	<security:ifAny authorization="test_pass">test_pass</security:ifAny>
 <button   class="btn btn-default" onclick="save();">提交</button>
 <script type="text/javascript">
 
